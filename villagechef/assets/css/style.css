@@ -4,6 +4,8 @@ body{
 
 .h-heading{
     font-family: "Contrail One";
+    font-size: 4.5rem;
+    padding-left: 1.3rem;
 }
 .h-heading span{
     color: #F7B41A;
