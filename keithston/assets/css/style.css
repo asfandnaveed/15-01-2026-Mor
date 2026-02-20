@@ -1,0 +1,20 @@
+:root{
+    --text-sub-heading:#E9BD8C;
+}
+
+.h-heading{
+    font-family: "Sansita Swashed";
+}
+.header-section{
+    background-image: url("../images/header.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+.h-sub-heading{
+    color: var(--text-sub-heading);
+    font-family: "Inter";
+    font-size: 1.4rem;
+}
