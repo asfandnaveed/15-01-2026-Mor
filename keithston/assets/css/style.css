@@ -71,4 +71,8 @@ body {
     background-image: url("../images/products/product-background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 1rem;
+}
+.product-1 img{
+    height: 220px;
 }
