@@ -1,0 +1,20 @@
+:root{
+    --background-color-1:#FFD0A7;
+    --background-color-2:#FFA453;
+}
+
+.header-section{
+    background: linear-gradient(180deg, var(--background-color-1) , var(--background-color-2));
+}
+.header-background{
+    background-image: url("../images/header-background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.review-box-abs{
+    transform: rotate(8deg);
+}
+.review-box-rel{
+    width: 300px;
+}

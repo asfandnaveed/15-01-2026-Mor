@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java script</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <main id="main" class="bg-light">
+
+
+        <!-- NAVBAR -->
+        <nav id="navbar" class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">My Website</a>
+
+                <button id="themeBtn" onclick="changeTheme();" class="btn btn-light">
+                    Dark Mode
+                </button>
+
+            </div>
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="py-5">
+            <div class="container text-center">
+
+                <h1 class="display-5 fw-bold">Welcome to My Website</h1>
+
+                <p class="lead">
+                    This is a simple example to practice Light and Dark mode using JavaScript.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CARDS SECTION -->
+        <section class="pb-5">
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature One</h5>
+                                <p class="card-text">
+                                    Example content for the card section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature Two</h5>
+                                <p class="card-text">
+                                    Example content for the card section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title">Feature Three</h5>
+                                <p class="card-text">
+                                    Example content for the card section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+    <script>
+
+        function changeTheme() {
+
+            var changeTheme = document.getElementById('themeBtn');
+            changeTheme.classList.remove("btn-light");
+            changeTheme.classList.add("btn-dark");
+
+            var navbar = document.getElementById('navbar');
+
+            navbar.classList.remove('navbar-dark');
+            navbar.classList.add('navbar-light');
+
+            var main = document.getElementById('main');
+            main.classList.remove('bg-light');
+            main.classList.add('bg-dark');
+
+        }
+    </script>
+
+
+</body>
+
+</html>

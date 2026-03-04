@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java script</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <h1 id="headingText">Hello, world!</h1>
+
+    <button class="btn btn-danger" onclick="changeText();">Click me</button>
+     -->
+
+
+    <img id="img" src="assets/images/1.jpg" alt="">
+    <button class="btn btn-warning" onclick="changeImage();">Change Image</button>
+
+    <div class="d-flex">
+        <input id="inputPass" class="form-control" type="password">
+        <button onclick="viewPassword();" class="btn btn-primary"><i class="bi bi-eye-fill"></i></button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        function viewPassword(){
+
+            document.getElementById('inputPass').type = 'text';
+        }
+
+        function changeImage (){
+
+            var newPath = 'assets/images/2.jpg';
+
+            document.getElementById("img").src = newPath;
+        }
+
+        function changeText (){
+
+            // var x = 10;
+            // var y = 25;
+            // var z = 'Hello Corvit';
+            // var a = 'Students';
+            var alertText = '<div class="alert alert-danger">Students</div>';
+
+            var headingText = document.getElementById('headingText');
+
+            headingText.innerHTML =  alertText ; // Concatination
+            // document.getElementById('headingText').style.color = 'red';
+            headingText.style.fontSize = '4rem';
+        }
+
+        
+
+    </script>
+
+    
+</body>
+
+</html>
