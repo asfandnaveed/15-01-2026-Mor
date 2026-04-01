@@ -29,4 +29,8 @@ ________________________________________________________________________________
 # FIGMA GLAXY WEB DESGIN
 https://www.figma.com/design/6fU33jPArz9Lb4QuwTvXBq/3D-Interactive-Animation-For-UNIVERSE--Community---Community---Copy-?node-id=16-334&p=f&t=qn7W9SPpyBOrWbRy-0
 
+______________________________________________________________________________________
+# FIGMA ECOBASZAR WEB DESIGN 
+https://www.figma.com/design/WzvvIwGn8HPd8ATqXC6vsP/Shopery---Organic-eCommerce-Shop-Website-Figma-Template--Community---Community-?node-id=1-4&p=f&t=NASdil2HgbmZRJ5d-0
+
 
