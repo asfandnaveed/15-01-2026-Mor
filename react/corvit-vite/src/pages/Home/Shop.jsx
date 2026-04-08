@@ -12,8 +12,8 @@ export default function ShopPage() {
 
     const navigate = useNavigate();
 
-    const navigateToDetailPage = ()=>{
-        navigate('/product/productDetail');
+    const navigateToDetailPage = (id)=>{
+        navigate(`/product/productDetail/${id}`);
     }
 
     const getProductData = async () => {
@@ -119,7 +119,7 @@ export default function ShopPage() {
                         productsData.products.map((product) => (
 
                             <div className="col-lg-3 col-md-4 col-sm-6" >
-                                <div className="card h-100 shadow-sm" onClick={navigateToDetailPage}>
+                                <div className="card h-100 shadow-sm" onClick={()=>navigateToDetailPage(product.id)}>
                                     <img
                                         src={baseURL+product.image}
                                         className="card-img-top"

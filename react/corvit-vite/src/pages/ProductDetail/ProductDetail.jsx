@@ -1,8 +1,43 @@
 
+import { useParams } from 'react-router-dom';
 import './ProductDetail.css';
+import { use, useEffect, useState } from 'react';
 
 
 export default function ProductDetail() {
+
+    const baseURL = "http://localhost:3000";
+
+    const { id } = useParams();
+
+    const [productDetail, setProductDetail] = useState();
+    const [isLoading, setIsLoading] = useState(true);
+
+    const getProductDetail = async () => {
+
+        try {
+            const response = await  fetch(`http://localhost:3000/api/products/${id}`);
+            const data = await response.json();
+            setProductDetail(data);
+        }catch(err){
+            
+        }
+        finally{
+            setIsLoading(false);
+        }
+    };
+
+    useEffect(()=>{
+        getProductDetail();
+    } , [id]);
+
+
+
+    if(isLoading){
+        return(
+            <h1>Loading</h1>
+        );
+    }
 
     return (
         <div className="container py-5">
@@ -17,7 +52,7 @@ export default function ProductDetail() {
 
                     <div className="flex-grow-1 text-center">
                         <img
-                            src="http://localhost:3000/uploads/cabage.png"
+                            src={baseURL+productDetail.product.image}
                             alt="Chinese Cabbage"
                             className="img-fluid"
                             style={{ maxHeight: 400 }}
@@ -27,16 +62,16 @@ export default function ProductDetail() {
 
                 {/* Right: Details */}
                 <div className="col-md-6">
-                    <h2 className="fw-bold">Chinese Cabbage</h2>
+                    <h2 className="fw-bold">{ productDetail.product.name}</h2>
 
                     <div className="mb-2 text-warning">
                         ★★★★☆
-                        <span className="text-muted ms-2">4.3 Review</span>
+                        <span className="text-muted ms-2">{productDetail.product.rating} Review</span>
                     </div>
 
-                    <p className="text-muted">SKU: SKU-CABBAGE</p>
+                    <p className="text-muted">SKU: {productDetail.product.sku}</p>
 
-                    <h3 className="text-success fw-bold">$5.99</h3>
+                    <h3 className="text-success fw-bold">${productDetail.product.price}</h3>
 
                     <span className="badge bg-success mb-3">In Stock</span>
 
@@ -68,7 +103,7 @@ export default function ProductDetail() {
                             <strong>Category:</strong> Vegetables
                         </p>
                         <p>
-                            <strong>Stock:</strong> 80
+                            <strong>Stock:</strong> {productDetail.product.stock}
                         </p>
                     </div>
                 </div>
