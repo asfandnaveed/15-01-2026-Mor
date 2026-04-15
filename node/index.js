@@ -2,6 +2,7 @@
 import express from 'express';
 import db from './config/db.js';
 import cors from 'cors'
+import 'dotenv/config';
 import productRoute from './routes/productRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import cartRoute from './routes/cartRoute.js';
@@ -27,7 +28,7 @@ app.use('/api/cart',cartRoute);
 
 
 // localhost:3000
-const PORT = 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log('Project is Running !!');
 });
