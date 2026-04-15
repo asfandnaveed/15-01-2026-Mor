@@ -33,4 +33,8 @@ ________________________________________________________________________________
 # FIGMA ECOBASZAR WEB DESIGN 
 https://www.figma.com/design/WzvvIwGn8HPd8ATqXC6vsP/Shopery---Organic-eCommerce-Shop-Website-Figma-Template--Community---Community-?node-id=1-4&p=f&t=NASdil2HgbmZRJ5d-0
 
+______________________________________________________________________________________
+# BACKEND PORTAL DESIGN 
+https://drive.google.com/file/d/1fJhQRyYQcZUXUY4ZDmL8OJp3y78Xx8w3/view?usp=sharing
+
 
