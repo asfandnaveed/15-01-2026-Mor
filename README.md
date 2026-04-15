@@ -34,3 +34,4 @@ ________________________________________________________________________________
 https://www.figma.com/design/WzvvIwGn8HPd8ATqXC6vsP/Shopery---Organic-eCommerce-Shop-Website-Figma-Template--Community---Community-?node-id=1-4&p=f&t=NASdil2HgbmZRJ5d-0
 
 
+
